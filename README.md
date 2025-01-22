@@ -10,7 +10,7 @@ Changes I made:
 * Async functionalities are fixed for adding new projects: redirect waits until the promise is resolved
 * Online status is updated to reflect user actions and it stays in sync between the App and Firestore database using a real-time listener:
    - Online status updates to false when the window is closed
-   - Online status updates to true when a user is logged in and opens up the app again after a closing it
+   - Online status updates to true when a user is logged in and opens up the app again after closing it
 * Password confirmation and alert for signup
 * User can delete comments from projects (own comments only)
 * Small change for the logout hook: logout doesn't cause an error after redirect to the homepage.
