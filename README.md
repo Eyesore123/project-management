@@ -1,10 +1,10 @@
 Files for project management website. This project is from The Net Ninja's Firebase and React course.
 
-Deployed to Firebase:
+Check the project ->
 
 <a href="https://javascript-d1a2d.web.app/">Go to project website</a>
 
-Changes I made when compared to the code in the course material:
+Changes I made:
 
 * Code is cleaner and drier
 * Async functionalities are fixed for adding new projects: redirect waits until the promise is resolved
