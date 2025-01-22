@@ -8,7 +8,7 @@ Changes I made:
 
 * Code is cleaner and drier
 * Async functionalities are fixed for adding new projects: redirect waits until the promise is resolved
-* Online status is updated and keeped in sync between the App and Firestore database with real-time listener:
+* Online status is updated to reflect user actions and it stays in sync between the App and Firestore database using a real-time listener:
    - Status updates to false when the window is closed
    - Online status updates to true when a user is logged in and opens up the app again after a closing it
 * Password confirmation and alert for signup
