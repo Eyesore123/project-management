@@ -1,5 +1,9 @@
 Files for project management website. This project is from The Net Ninja Firebase and React course.
 
+Deployed to Firebase:
+
+<a href="https://javascript-d1a2d.web.app/">Go to project website</a>
+
 Changes I made when compared to the code in the course material:
 
 * Code is cleaner and drier
