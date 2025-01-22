@@ -19,3 +19,6 @@ Known issues:
 
 * Logout causes an error message on console
 * Online status gets updated to the database, but there are instances where irregular behaviour might occur, for example when a user uses two different browsers and same login credentials
+  
+
+![project_management](https://github.com/user-attachments/assets/0d7e847e-b086-4053-af3b-fa988f378fbf)
