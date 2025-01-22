@@ -1,4 +1,4 @@
-Files for project management website. This project is from The Net Ninja Firebase and React course.
+Files for project management website. This project is from The Net Ninja's Firebase and React course.
 
 Deployed to Firebase:
 
