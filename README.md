@@ -35,5 +35,6 @@ Project images:
   
 ![1](https://github.com/user-attachments/assets/b47b4269-f304-4868-85cf-e8610d36be9f)
 
-![2](https://github.com/user-attachments/assets/062c1e53-d99e-4c49-9354-2462ae3634a4)
+
+![4](https://github.com/user-attachments/assets/59412fbc-283f-4ca2-8919-c9b1dad48b65)
 
