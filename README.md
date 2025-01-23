@@ -33,6 +33,12 @@ Coming soon:
 * Update projects functionality (button, form, routing etc.)
 * Dark mode
 
+Planned future updates:
+
+* Additions to sidebar: a link to workspace where assigned users can collaborate
+* Additions to dashboard: personal to-do list and activity feed
+* Styling improvements and breakpoints for smaller screens
+
 Project images:
 
   
