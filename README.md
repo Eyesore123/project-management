@@ -14,6 +14,8 @@ Code improvements
 
 Functional improvements and additions
 
+* A settings button on the bottom left corner that open the settings window
+* Buttons for changing the theme color
 * Online status is updated to reflect user actions and it stays in sync between the App and Firestore database using a real-time listener:
    - Online status updates to false when the window is closed
    - Online status updates to true when a user is logged in and opens up the app again after closing it
@@ -28,7 +30,7 @@ Known issues:
 
 Coming soon:
 
-* A settings button on the bottom left corner that does absolutely nothing
+* Dark mode
 
 Project images:
 
