@@ -26,6 +26,10 @@ Known issues:
 * Logout causes an error message on console
 * Online status gets updated to the database, but there are instances where irregular behaviour might occur, for example when a user uses two different browsers and same login credentials
 
+Coming soon:
+
+* A settings button to the bottom left corner that does absolutely nothing
+
   
 ![1](https://github.com/user-attachments/assets/b47b4269-f304-4868-85cf-e8610d36be9f)
 
