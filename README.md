@@ -35,8 +35,8 @@ Coming soon:
 
 Planned future updates:
 
-* Additions to sidebar: a link to workspace where assigned users can collaborate
-* Additions to dashboard: personal to-do list and activity feed
+* Additions to sidebar: a link to the workspace where assigned users can collaborate
+* Additions to dashboard: a personal to-do list and activity feed where recent actions are listed in a timeline
 * Styling improvements and breakpoints for smaller screens
 
 Project images:
