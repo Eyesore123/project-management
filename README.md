@@ -28,7 +28,7 @@ Known issues:
 
 Coming soon:
 
-* A settings button to the bottom left corner that does absolutely nothing
+* A settings button on the bottom left corner that does absolutely nothing
 
 Project images:
 
