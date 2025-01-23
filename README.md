@@ -1,10 +1,10 @@
-Files for project management website. This project is from The Net Ninja's Firebase and React course.
+Files for a project management website. This project is from The Net Ninja's Firebase and React course.
 
 Check the project ->
 
 <a href="https://javascript-d1a2d.web.app/">Go to project website</a>
 
-Changes I made:
+Things that have changed from the original version:
 
 Code improvements
 
