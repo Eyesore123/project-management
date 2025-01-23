@@ -30,6 +30,8 @@ Coming soon:
 
 * A settings button to the bottom left corner that does absolutely nothing
 
+Project images:
+
   
 ![1](https://github.com/user-attachments/assets/b47b4269-f304-4868-85cf-e8610d36be9f)
 
