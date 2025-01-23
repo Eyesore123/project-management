@@ -30,6 +30,7 @@ Known issues:
 
 Coming soon:
 
+* Update projects functionality (button, form, routing etc.)
 * Dark mode
 
 Project images:
