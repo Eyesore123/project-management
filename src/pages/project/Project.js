@@ -7,7 +7,7 @@ import ProjectComments from './ProjectComments'
 
 // Use the useDocument hook to get the document from the database, extract the document and id from the hook and pass them as props to the component. For that we need to import the useParams hook from react-router-dom and destructure the id from the params object
 
-export default function Project() {
+export default function Project({ showComments }) {
 
   const { id } = useParams()
   const { error, document } = useDocument('projects', id)
@@ -21,7 +21,7 @@ export default function Project() {
         {document && (
           <React.Fragment>
           <ProjectSummary project={document} />
-          <ProjectComments project={document} />
+          <ProjectComments project={document} showComments={showComments} />
           </React.Fragment>
         )}
     </div>

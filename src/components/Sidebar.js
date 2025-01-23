@@ -5,8 +5,9 @@ import React from 'react'
 import { NavLink } from 'react-router-dom'
 import Avatar from './Avatar'
 import { useAuthContext } from '../hooks/useAuthContext'
+import CogButton from './cogButton'
 
-export default function Sidebar() {
+export default function Sidebar({ setShowComments}) {
 
     const { user } = useAuthContext()
 
@@ -33,6 +34,9 @@ export default function Sidebar() {
                     </li>
                 </ul>
             </nav>
+            {/* Cog button here */}
+            <CogButton setShowComments={setShowComments}
+             />
         </div>
       
     </div>

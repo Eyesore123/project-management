@@ -14,6 +14,7 @@
   }
   .project-list h4 {
     font-size: 0.9em;
+    margin-bottom: 8px;
     color: var(--heading-color);
   }
   .project-list p {

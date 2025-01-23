@@ -7,11 +7,12 @@ import { useFirestore } from '../../hooks/useFirestore'
 import Avatar from '../../components/Avatar'
 import formatDistanceToNow from 'date-fns/formatDistanceToNow'
 
-export default function ProjectComments({ project }) {
+export default function ProjectComments({ project, showComments }) {
 
     const [comment, setComment] = useState('')
     const { user } = useAuthContext()
     const { updateDocument } = useFirestore('projects')
+    
 
     const handleSubmit = async (e) => {
         e.preventDefault()
@@ -38,7 +39,7 @@ export default function ProjectComments({ project }) {
     }
 
   return (
-    <div className='project-comments'>
+    <div className='project-comments' style={{ display: showComments ? 'block' : 'none' }}>
         <h4>Project Comments</h4>
         <ul>
             {project.comments.length > 0 && project.comments.map(comment => (

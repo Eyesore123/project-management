@@ -45,3 +45,45 @@
   .sidebar .links .active img {
     filter: invert(40%);
   }
+
+  /* Settings btn */
+
+  .settings {
+    position: fixed;
+    bottom: 25px;
+    left: 100px;
+    text-align: center;
+    display: flex;
+    padding: 10px;
+    text-decoration: none;
+    width: 100%;
+    color: #fff;
+    box-sizing: border-box;
+    font-family: Poppins, sans-serif;
+    font-size: 1em;
+  }
+
+  .cog-button {
+    position: fixed;
+    height: 40px;
+    width: 40px;
+    left: 30px;
+    font-size: 20px;
+    bottom: 31px;
+    border: none;
+    background-color: white;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 25%;
+  }
+
+  .cog-button img {
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+  }

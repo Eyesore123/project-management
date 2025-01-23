@@ -10,6 +10,8 @@ import Sidebar from './components/Sidebar'
 import { useAuthContext } from './hooks/useAuthContext'
 import OnlineUsers from './components/OnlineUsers'
 
+import { useState } from 'react'
+
 // For useEffect
 import { db } from './firebase/config'
 import { projectAuth } from './firebase/config'
@@ -19,6 +21,7 @@ import 'firebase/auth'
 function App() {
 
   const { authIsReady, user, dispatch } = useAuthContext()
+  const [showComments, setShowComments] = useState(true)
 
   useEffect(() => {
     const unsubscribe = projectAuth.onAuthStateChanged(async (currentUser) => {
@@ -59,7 +62,7 @@ function App() {
     <div className="App">
     { authIsReady && (
       <BrowserRouter>
-      {user && <Sidebar />}
+      {user && <Sidebar setShowComments={setShowComments} />}
         <div className="container">
           <Navbar />
           <Switch>
@@ -72,7 +75,7 @@ function App() {
               {!user && <Redirect to="/login" />}
             </Route>
             <Route path="/projects/:id">
-              {user && <Project />}
+              {user && <Project showComments={showComments} />}
               {!user && <Redirect to="/login" />}
             </Route>
             <Route path="/login">
@@ -93,15 +96,3 @@ function App() {
 }
 
 export default App
-
-/*
-
-Need pages for:
-
-Dashboard
-Login
-Signup
-Create
-Project details
-
-*/
