@@ -42,11 +42,13 @@ Planned future updates:
 
 Project images:
 
+
+![projec_management](https://github.com/user-attachments/assets/534301c3-e932-4ce1-8dc4-e99d925f24eb)
+
   
 ![1](https://github.com/user-attachments/assets/b47b4269-f304-4868-85cf-e8610d36be9f)
 
 
-![4](https://github.com/user-attachments/assets/59412fbc-283f-4ca2-8919-c9b1dad48b65)
 
 What I've learned during this project:
 
