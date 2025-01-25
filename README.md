@@ -13,7 +13,7 @@ Code improvements
 * Small change for the logout hook: logout doesn't cause a fatal error after redirect to the homepage.
 * Dynamic data fetching for components.
 * An update component added to routing with a separate page that takes the userparams as arguments
-* Document update logic: project updates delete old documents from the projects collection and simultaneously create new ones to the database.
+* Document update logic: project updates delete old documents from the projects collection and simultaneously create new ones.
 
 Functional improvements and additions
 
