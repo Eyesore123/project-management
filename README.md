@@ -35,6 +35,7 @@ Known issues:
 Coming soon:
 
 * Dark mode
+* Small stylistic improvements and a cancel button on the update project page
 
 Planned future updates:
 
