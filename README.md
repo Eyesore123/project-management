@@ -38,9 +38,12 @@ Coming soon:
 
 Planned future updates:
 
-* Additions to sidebar: a link to the workspace where assigned users can collaborate
+* Additions to sidebar: a link to workspace where assigned users can collaborate
 * Additions to dashboard: a personal to-do list and activity feed where recent actions are listed in a timeline
+* Alerts for project deadlines
 * Styling improvements and breakpoints for smaller screens
+* Users can set alerts for themselves from the settings
+* Users can change their profile picture in the settings
 
 Project images:
 
@@ -56,4 +59,4 @@ What I've learned during this project:
 
 * The original course material and the way data was structured in the database was not very suitable for creating a system of dynamic data fetching.
   For example, the additional function for updating projects can be hard to implement because data fetching is hard-coded into the components. Data fetching should be dynamic. When projects are altered, it means that the user comments and user photos are altered as well. A change in a project can cause disruptions in other data points. Comments and photos need dynamic fetching in order to appear in the right places.
-* I couldn't get the update feature work properly with the way data is fetched from two collections so I decided to remove and add a document to projects collection every time a user updates a project. It is easy to fetch the data from previous project but when there are many properties assigned to each user, it is practical to delete the previous document and replace it with the updated one.
+* I couldn't get the project update feature work properly with the way data is fetched from two collections so I decided to remove and add a document to projects collection every time a user updates a project. It is easy to fetch the data from previous project but when there are many properties assigned to each user, it is practical to delete the previous document and replace it with the updated one.
