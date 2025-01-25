@@ -12,7 +12,7 @@ Code improvements
 * Async functionalities are fixed for adding new projects: redirect waits until the promise is resolved
 * Small change for the logout hook: logout doesn't cause a fatal error after redirect to the homepage.
 * Dynamic data fetching for components.
-* An update component added to routing with a separate page that takes the id and extracts it for a param.
+* An update component added to routing with a separate page
 * Document update logic: project updates delete old documents from the projects collection and simultaneously create new ones.
 
 Functional improvements and additions
