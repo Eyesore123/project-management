@@ -13,6 +13,7 @@ Code improvements
 * Small change for the logout hook: logout doesn't cause a fatal error after redirect to the homepage.
 * Dynamic data fetching for components.
 * An update component added to routing with a separate page that takes the userparams as arguments
+* Document update logic: project updates delete old documents from the projects collection and simultaneously create new ones to the database.
 
 Functional improvements and additions
 
@@ -24,7 +25,7 @@ Functional improvements and additions
 * Password confirmation for signup
 * Password reset form on the login page and a working password reset using email
 * Users can delete comments from projects (own comments only)
-* Users can update their projects
+* Users can update their projects.
 
 Known issues:
 
