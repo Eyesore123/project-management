@@ -11,6 +11,7 @@ Code improvements
 * Code is cleaner and drier
 * Async functionalities are fixed for adding new projects: redirect waits until the promise is resolved
 * Small change for the logout hook: logout doesn't cause an error after redirect to the homepage.
+* Dynamic data fetching for components.
 
 Functional improvements and additions
 
