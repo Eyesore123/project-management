@@ -1,17 +1,36 @@
 import React from 'react'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { timestamp } from '../../firebase/config'
 import { useAuthContext } from '../../hooks/useAuthContext'
 import { v4 as uuidv4 } from 'uuid'
 import { useFirestore } from '../../hooks/useFirestore'
 import Avatar from '../../components/Avatar'
 import formatDistanceToNow from 'date-fns/formatDistanceToNow'
+import { db } from '../../firebase/config'
 
 export default function ProjectComments({ project, showComments }) {
 
     const [comment, setComment] = useState('')
     const { user } = useAuthContext()
     const { updateDocument } = useFirestore('projects')
+
+    //Experimental:
+    const [userData, setUserData] = useState(null)
+
+    // Fetch user data for each comment dynamically!
+    useEffect(() => {
+        const fetchUserData = async () => {
+            const users = {}
+            for (const comment of project.comments) {
+                const userDoc = await db.collection('users').doc(comment.createdBy).get()
+                users[comment.createdBy] = userDoc.data()
+            }
+            setUserData(users)
+        }
+
+        fetchUserData()
+    }, [project.comments])
+
     
 
     const handleSubmit = async (e) => {

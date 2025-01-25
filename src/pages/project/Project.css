@@ -101,3 +101,10 @@
 .comment-delete:hover {
   background-color: var(--text-color);
 }
+
+/* Update project */
+
+.update-btn, .complete-btn {
+  margin-right: 20px;
+  margin-bottom: 20px !important;
+}

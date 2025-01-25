@@ -3,6 +3,7 @@ import './Project.css'
 import Avatar from '../../components/Avatar'
 import { useFirestore } from '../../hooks/useFirestore'
 import { useAuthContext } from '../../hooks/useAuthContext'
+import { Link } from 'react-router-dom'
 
 export default function ProjectSummary( { project }) {
 
@@ -23,7 +24,7 @@ export default function ProjectSummary( { project }) {
   return (
     <div>
         <div className='project-summary'>
-        <h2 className='page-title'>{project.name}</h2>
+        <h2 className='page-title' style={{marginBottom: '20px'}}>{project.name}</h2>
         <p>Created by: {project.createdBy.displayName}</p>
         <p className='due-date'>
             Due by {project.dueDate.toDate().toDateString()}
@@ -38,7 +39,12 @@ export default function ProjectSummary( { project }) {
             ))}
             </div>
         </div>
-        {project.createdBy.id === user.uid && <button className='btn' onClick={handleClick}>Mark As Complete</button>}
+        {project.createdBy.id === user.uid && <button className='btn complete-btn' onClick={handleClick}>Mark As Complete</button>}
+        
+        <Link to={`/update-project/${project.id}`}>
+        {project.createdBy.id === user.uid && <button className='btn update-btn'>Update Project</button>}
+        </Link>
+
     </div>
 
   )

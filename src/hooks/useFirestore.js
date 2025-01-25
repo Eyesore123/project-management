@@ -54,12 +54,14 @@ export const useFirestore = (collection) => {
 
     // add a document
 
-    const addDocument = async (doc) => {
+    const addDocument = async (doc, customId = null) => {
         dispatch({ type: 'IS_PENDING' })
 
         try {
             const createdAt = timestamp.fromDate(new Date())
-            const addedDocument = await ref.add({...doc, createdAt})
+            const addedDocument = customId
+            ? await ref.doc(customId).set({ ...doc, createdAt })
+            : await ref.add({ ...doc, createdAt });
             dispatchIfNotCancelled({ type: 'ADDED_DOCUMENT', payload: addedDocument })
         }
 
@@ -91,17 +93,16 @@ export const useFirestore = (collection) => {
     const updateDocument = async (id, updates) => {
 
         dispatch({ type: 'IS_PENDING' })
-        
-        try {
-            const updatedDocument = await ref.doc(id).update(updates)
-            dispatchIfNotCancelled({ type: 'UPDATED_DOCUMENT', payload: updatedDocument })
-            return updatedDocument
-        }
 
-        catch (err) {
-            dispatchIfNotCancelled({ type: 'ERROR', payload: err.message })
-        }
-    }
+        // Update the document
+        try {
+            const updatedDocument = await ref.doc(id).update(updates);
+            dispatchIfNotCancelled({ type: 'UPDATED_DOCUMENT', payload: updatedDocument });
+            return updatedDocument;
+            } catch (err) {
+            dispatchIfNotCancelled({ type: 'ERROR', payload: err.message });
+            }
+        };
 
     useEffect(() => {
         return () => setIsCancelled(true)

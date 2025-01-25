@@ -10,7 +10,8 @@ export default function ProjectList({ projects }) {
       {projects.map((doc) => (
         <Link to={`/projects/${doc.id}`} key={doc.id}>
             <h4>{doc.name}</h4>
-            <p>Due by {doc.dueDate.toDate().toDateString()}</p>
+            <p> Due by {doc.dueDate && doc.dueDate.toDate ? doc.dueDate.toDate().toDateString() : 'No due date set'}
+            </p>
             <div className='assigned-to'>
             <ul>
                 {doc.assignedUsersList.map(user => (

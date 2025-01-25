@@ -3,13 +3,13 @@ import { BrowserRouter, Switch, Route, Redirect } from 'react-router-dom'
 import Login from './pages/login/Login'
 import Signup from './pages/signup/Signup'
 import Create from './pages/create/Create'
+import Update from './pages/create/Update'
 import Project from './pages/project/Project'
 import Dashboard from './pages/dashboard/Dashboard'
 import Navbar from './components/Navbar'
 import Sidebar from './components/Sidebar'
 import { useAuthContext } from './hooks/useAuthContext'
 import OnlineUsers from './components/OnlineUsers'
-
 import { useState } from 'react'
 
 // For useEffect
@@ -74,6 +74,14 @@ function App() {
               {user && <Create />}
               {!user && <Redirect to="/login" />}
             </Route>
+
+            {/* Update project route */}
+            
+            <Route path="/update-project/:id" element={<Update />} >
+            {user && <Update />}
+            {!user && <Redirect to="/login" />}
+            </Route>
+
             <Route path="/projects/:id">
               {user && <Project showComments={showComments} />}
               {!user && <Redirect to="/login" />}
