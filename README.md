@@ -4,7 +4,7 @@ Check the project ->
 
 <a href="https://javascript-d1a2d.web.app/">Go to project website</a>
 
-Things that have changed from the original version:
+A listing of things that are different from the original version:
 
 Code improvements
 
