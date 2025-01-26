@@ -46,8 +46,13 @@ Planned future updates:
 * Users can set alerts for themselves from the settings
 * Users can change their profile picture in the settings
 
-Project images:
+Project images
 
+Dark mode:
+
+![dark_mode](https://github.com/user-attachments/assets/0c629e70-a4bd-42ee-a0d2-97fcf03e12cd)
+
+Light blue theme color:
 
 ![projec_management](https://github.com/user-attachments/assets/534301c3-e932-4ce1-8dc4-e99d925f24eb)
 
