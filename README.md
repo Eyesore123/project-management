@@ -31,11 +31,12 @@ Known issues:
 
 * Logout causes an error message on console
 * Online status gets updated to the database, but there are instances where irregular behaviour might occur, for example when a user uses two different browsers and same login credentials
+* Some of the form fields stay on top of the settings window
 
 Coming soon:
 
-* Dark mode
-* Small stylistic improvements and a cancel button on the update project page
+* A cancel button on the update project page
+* More theme colors
 
 Planned future updates:
 
@@ -45,6 +46,7 @@ Planned future updates:
 * Styling improvements and breakpoints for smaller screens
 * Users can set alerts for themselves from the settings
 * Users can change their profile picture in the settings
+* A new collection for user settings
 
 Project images
 
