@@ -48,7 +48,7 @@ Planned future updates:
 * Alerts for project deadlines
 * Styling improvements and breakpoints for smaller screens
 * Users can set alerts for themselves from the settings
-* A new collection for user settings that keeps track of sessions
+* A new data collection for user settings that keeps track of user settings in sessions
 
 Project images
 
