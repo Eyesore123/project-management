@@ -37,18 +37,18 @@ Known issues:
 
 Coming soon:
 
-* A cancel button on the update project page
 * More theme colors
+* Whatever I can implement
 
 Planned future updates:
 
-* Additions to sidebar: a link to workspace where assigned users can collaborate
+* Additions to sidebar: a link to personal workspaces window. Workspaces are places where assigned users can collaborate.
 * Additions to dashboard: a personal to-do list and activity feed where recent actions are listed in a timeline
+* Projects location change: dashboard reserved for the activity feed etc. whereas projects location contains projects. Feels more logical that way. Users can go straight to workspace from projects window when they are among the assigned users.
 * Alerts for project deadlines
 * Styling improvements and breakpoints for smaller screens
 * Users can set alerts for themselves from the settings
-* Users can change their profile picture in the settings
-* A new collection for user settings
+* A new collection for user settings that keeps track of sessions
 
 Project images
 
