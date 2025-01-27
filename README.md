@@ -19,6 +19,7 @@ Functional improvements and additions
 
 * A settings button on the bottom left corner that opens the settings window
 * Buttons for changing the theme color
+* Dark mode
 * Online status is updated to reflect user actions and it stays in sync between the App and Firestore database using a real-time listener:
    - Online status updates to false when the window is closed
    - Online status updates to true when a user is logged in and opens up the app again after closing it
@@ -26,6 +27,7 @@ Functional improvements and additions
 * Password reset form on the login page and a working password reset using email
 * Users can delete comments from projects (own comments only)
 * Users can update their projects.
+* Users can change their avatars.
 
 Known issues:
 
