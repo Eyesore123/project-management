@@ -38,7 +38,7 @@ Known issues:
 * Some of the form fields stay on top of the settings window
 
 
-What I would be nice to implement:
+What would be nice to implement:
 
 * Additions to sidebar: a link to personal workspaces window. Workspaces are places where assigned users can collaborate.
 * Additions to dashboard: a personal to-do list and activity feed where recent actions are listed in a timeline
